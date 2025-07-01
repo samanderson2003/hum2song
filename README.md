@@ -10,69 +10,6 @@ A neural network-based system for recognizing hummed melodies and matching them 
 - **Performance Analysis**: Comprehensive testing and visualization tools
 - **Demo Data**: Built-in demo data generation for testing
 
-```
-
-## Installation
-
-1. Clone or download the project
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Quick Start
-
-### 1. Create Demo Data
-```bash
-python train.py --create_demo
-```
-
-### 2. Train the Model
-```bash
-python train.py --data_dir data --epochs 50
-```
-
-### 3. Test Performance
-```bash
-python search.py --create_test_data
-python search.py --test_performance
-```
-
-### 4. Interactive Demo
-```bash
-python search.py --interactive
-```
-
-## Usage
-
-### Training a Model
-
-```bash
-# Basic training with default parameters
-python train.py --data_dir data
-
-# Custom training parameters
-python train.py --data_dir data --epochs 100 --batch_size 16 --lr 0.0005
-
-# Create demo data first
-python train.py --create_demo
-```
-
-### Searching for Songs
-
-```bash
-# Test model performance
-python search.py --test_performance
-
-# Interactive search demo
-python search.py --interactive
-
-# Search for a specific hum file
-python search.py --search_hum data/perfect_hum1.npy
-
-# Create comprehensive test data
-python search.py --create_test_data
-```
 
 ## Model Architecture
 
@@ -180,9 +117,7 @@ results = searcher.search_song('hum.npy', top_k=10)
 4. Add tests if applicable
 5. Submit a pull request
 
-## License
 
-This project is open-source and available under the MIT License.
 
 ## Acknowledgments
 
