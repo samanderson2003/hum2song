@@ -1,0 +1,32 @@
+{
+    "model": {
+        "embed_dim": 128,
+        "learning_rate": 0.001,
+        "batch_size": 8,
+        "num_epochs": 50,
+        "dropout_rate": 0.3
+    },
+    "audio": {
+        "sample_rate": 22050,
+        "n_mels": 80,
+        "n_fft": 2048,
+        "hop_length": 512,
+        "duration": 10.0
+    },
+    "training": {
+        "save_checkpoint_every": 10,
+        "early_stopping_patience": 15,
+        "validation_split": 0.2
+    },
+    "search": {
+        "default_threshold": 0.5,
+        "top_k_results": 5,
+        "similarity_metric": "cosine"
+    },
+    "paths": {
+        "data_dir": "data",
+        "models_dir": "models_saved",
+        "results_dir": "results",
+        "audio_dir": "audio"
+    }
+}
