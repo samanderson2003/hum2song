@@ -10,25 +10,6 @@ A neural network-based system for recognizing hummed melodies and matching them 
 - **Performance Analysis**: Comprehensive testing and visualization tools
 - **Demo Data**: Built-in demo data generation for testing
 
-## Project Structure
-
-```
-song-recognition/
-├── train.py              # Train the neural network model
-├── search.py             # Search and test the trained model
-├── audio_processor.py    # Audio preprocessing utilities
-├── models/               # Model architecture definitions
-│   ├── __init__.py
-│   ├── encoder.py        # CNN encoder
-│   └── siamese.py        # Siamese network
-├── utils/                # Utility functions
-│   ├── __init__.py
-│   ├── dataset.py        # Dataset classes
-│   └── visualization.py  # Plotting and visualization
-├── data/                 # Training and test data
-├── models_saved/         # Saved model checkpoints
-├── results/              # Training results and plots
-└── requirements.txt      # Python dependencies
 ```
 
 ## Installation
